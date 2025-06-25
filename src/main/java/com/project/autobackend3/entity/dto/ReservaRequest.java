@@ -1,4 +1,4 @@
-package com.project.autobackend3.entity;
+package com.project.autobackend3.entity.dto;
 
 import lombok.Data;
 
@@ -8,6 +8,6 @@ import java.time.LocalDateTime;
 public class ReservaRequest {
     private LocalDateTime fechaInicio;
     private LocalDateTime fechaFin;
-    private Long usuarioId;
+    private Integer usuarioId;
     private Long vehiculoId;
 }

@@ -1,6 +1,6 @@
-package com.project.autobackend1.repository;
+package com.project.autobackend3.repository;
 
-import com.project.autobackend1.entity.usuario;
+import com.project.autobackend3.entity.usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

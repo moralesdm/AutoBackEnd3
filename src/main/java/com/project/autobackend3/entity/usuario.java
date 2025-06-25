@@ -1,5 +1,5 @@
 
-package com.project.autobackend1.entity;
+package com.project.autobackend3.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

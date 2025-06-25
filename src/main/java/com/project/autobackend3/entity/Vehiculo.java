@@ -1,4 +1,4 @@
-package com.project.autobackend2.entity;
+package com.project.autobackend3.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,11 +27,5 @@ public class Vehiculo {
     private Boolean estado;
     @Column(length = 512)
     private String imagenUrl;
-    @ManyToOne
-    private Categoria categoria;
-    @ManyToOne
-    private Sucursal sucursal;
-    @ManyToMany
-    @JoinTable(name = "vehiculo_caracteristica")
-    private List<Caracteristica> caracteristicas = new ArrayList<>();
+
 }

@@ -1,4 +1,4 @@
-package com.project.autobackend3.entity.dto;
+package com.project.autobackend3.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -28,7 +28,7 @@ public class Reserva {
     private EstadoReserva estado;
 
     @ManyToOne(optional = false)
-    private Usuario usuario;
+    private usuario usuario;
 
     @ManyToOne(optional = false)
     private Vehiculo vehiculo;

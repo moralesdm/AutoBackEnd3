@@ -1,4 +1,7 @@
-package com.project.autobackend3.entity.dto;
+package com.project.autobackend3.entity;
 
-public class EstadoReserva {
+public enum EstadoReserva {
+    PENDIENTE,
+    CONFIRMADA,
+    CANCELADA
 }

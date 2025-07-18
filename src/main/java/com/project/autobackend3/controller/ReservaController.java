@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/reservas")
+@RequestMapping("/api/reservas/reservas")
 @RequiredArgsConstructor
 public class ReservaController {
 
     private final ReservaService reservaService;
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<ReservaResponse>> listarTodas() {
         return ResponseEntity.ok(reservaService.listarTodas());
     }

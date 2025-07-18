@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/alquileres")
+@RequestMapping("/api/alquileres/alquileres")
 @RequiredArgsConstructor
 public class AlquilerController {
 
     private final AlquilerService alquilerService;
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<AlquilerResponse>> listar() {
         return ResponseEntity.ok(alquilerService.listar());
     }

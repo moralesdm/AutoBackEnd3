@@ -17,7 +17,7 @@ public class AlquilerController {
 
     private final AlquilerService alquilerService;
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<List<AlquilerResponse>> listar() {
         return ResponseEntity.ok(alquilerService.listar());
     }
